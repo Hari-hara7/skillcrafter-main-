@@ -1,0 +1,643 @@
+User body,
+h1,
+h2,
+p,
+ul {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+body {
+
+
+
+    color: #ffffff;
+    /* Text color set to white */
+
+    background-color: #000000;
+    /* Background color set to black */
+
+    line-height: 1.6;
+
+}
+
+/* Header styles */
+
+header {
+
+    background-color: #000000;
+
+    color: #fff;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo-container img {
+
+    height: 80px;
+
+    width: auto;
+
+}
+
+nav ul {
+
+    list-style-type: none;
+
+    display: flex;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: #dbdbdb;
+
+    margin: 0 15px;
+
+    font-size: 1.2em;
+
+    transition: color 0.3s ease;
+
+}
+
+nav a:hover {
+
+    color: #00aaed;
+
+}
+
+/* Section styles */
+
+section {
+
+    padding: 80px 0;
+
+    text-align: center;
+
+    body {
+        background: radial-gradient(circle at center center, transparent, rgb(0, 0, 0)),
+            linear-gradient(300deg, rgba(198, 198, 198, 0.05) 0%, rgba(198, 198, 198, 0.05) 50%, rgba(11, 11, 11, 0.05) 50%, rgba(11, 11, 11, 0.05) 100%),
+            linear-gradient(64deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 50%, rgba(132, 132, 132, 0.05) 50%, rgba(132, 132, 132, 0.05) 100%),
+            linear-gradient(17deg, rgba(57, 57, 57, 0.05) 0%, rgba(57, 57, 57, 0.05) 50%, rgba(128, 128, 128, 0.05) 50%, rgba(128, 128, 128, 0.05) 100%),
+            linear-gradient(332deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(85, 85, 85, 0.05) 50%, rgba(85, 85, 85, 0.05) 100%),
+            linear-gradient(148deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(211, 211, 211, 0.05) 50%, rgba(211, 211, 211, 0.05) 100%),
+            linear-gradient(142deg, rgba(168, 168, 168, 0.05) 0%, rgba(168, 168, 168, 0.05) 50%, rgba(32, 32, 32, 0.05) 50%, rgba(32, 32, 32, 0.05) 100%),
+            linear-gradient(15deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 50%, rgba(228, 228, 228, 0.05) 50%, rgba(228, 228, 228, 0.05) 100%),
+            linear-gradient(5deg, rgba(104, 104, 104, 0.05) 0%, rgba(104, 104, 104, 0.05) 50%, rgba(43, 43, 43, 0.05) 50%, rgba(43, 43, 43, 0.05) 100%),
+            radial-gradient(circle at center center, hsl(290, 5%, 8%), hsl(290, 5%, 8%));
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        /* Adjust text color as needed */
+        font-family: 'Lucida Bright', 'Georgia', serif;
+        /* Set your desired font family */
+        text-align: center;
+        font-size: 24px;
+        /* Adjust font size as needed */
+    }
+
+}
+
+h2 {
+
+    font-size: 2.5em;
+
+    margin-bottom: 20px;
+
+    color: #fff;
+
+}
+
+p {
+
+    font-size: 1.2em;
+
+    margin-bottom: 30px;
+
+    color: #ccc;
+
+}
+
+/* Footer styles */
+
+footer {
+
+    text-align: center;
+
+    padding: 20px 0;
+
+
+    color: #fff;
+    background-color: #000000;
+}
+
+.cta-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    font-size: 1em;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.cta-button.blue {
+
+    background-color: #007bff;
+    /* Blue color */
+
+}
+
+.cta-button:hover {
+
+    background-color: #0056b3;
+    /* Darker blue on hover */
+
+}
+
+.gallery-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+}
+
+.gallery-item {
+
+    flex: 1 0 48%;
+    /* Responsive gallery layout */
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+
+}
+
+.gallery-item img:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+
+body {
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #3498DB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #e60b0b;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #e5e5e5;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #ffffff;
+    }
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e00000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #3498db;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #3498db;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #3498db;
+    }
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #06ba00;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.7s ease-in-out;
+    animation: glow 3s infinite;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: row;
+        /* Change back to a row layout on larger screens */
+        justify-content: center;
+        /* Center the navigation items on larger screens */
+    }
+
+    .cta-button,
+    button {
+        width: 100%;
+        /* Make buttons take up full width on small screens */
+    }
+
+    .gallery-item {
+        flex: 1 0 100%;
+        /* Take up full width on small screens */
+    }
+}
+
+
+
+/* ... Your existing CSS ... */
+
+/* Mobile responsiveness */
+section {
+    padding: 80px 10px;
+    /* Adjusted padding for smaller screens */
+    text-align: center;
+    background-color: #000;
+}
+
+
+/* ... Your existing CSS ... */
+
+/* Section styles */
+
+
+/* ... Your existing CSS ... */
+/* ... Your existing CSS ... */
+
+/* Section styles */
+section {
+    padding: 80px 10px;
+    /* Adjusted padding for smaller screens */
+    text-align: center;
+    background-color: #000;
+}
+
+
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ffffff;
+
+}
+
+/* ... Your existing CSS ... */
+/* ... Your existing CSS ... */
+
+/* Update the font-family for ul */
+
+
+/* ... Your existing CSS ... */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-family: 'Courier New', monospace;
+    /* Use a typewriter font */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    line-height: 1.5;
+    /* Adjust the line height for better readability */
+    margin-bottom: 10px;
+    /* Add some space between list items */
+}
+
+h2 {
+    font-family: 'Verdana', sans-serif;
+
+}
+
+/* Your existing CSS styles */
+body {
+    /* Your existing body styles */
+    transition: background-color 0.3s ease;
+    /* Add transition for smooth color change */
+}
+
+body.white-bg {
+    background-color: #fff;
+    /* Change to white background */
+}
+
+/* Your existing CSS styles */
+
+body.white-bg {
+    background-color: #fff;
+    /* Change to white background */
+}
+
+section.white-bg {
+    background-color: #fff;
+    /* Change to white background */
+}
+
+.hidden {
+    display: none;
+    /* Hide the text */
+}
+
+.white-text {
+    color: #fff;
+    /* Set the text color to white */
+}
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+/* Font styles for paragraphs */
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+/* Font styles for headings */
+h1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 2.5em;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.8em;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+li {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.8em;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+ul {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.8em;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+
+
+
+
+
+
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    /* Adjust the color as needed */
+}
+
+/* Font styles for headings */
+h1 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 2.5em;
+    color: #ffffff;
+
+    h1 {
+        font-family: 'Verdana', sans-serif;
+        font-size: 2.5em;
+        color: #ffffff;
+        /* Adjust the color as needed */
+    }
+
+    h2 {
+        font-family: 'Georgia', serif;
+        font-size: 2em;
+        color: #ffffff;
+        font-family: 'Georgia', serif;
+        font-size: 2em;
+        color: #ffffff;
+        /* Adjust the color as needed */
+    }
+
+    h3 {
+        font-family: 'Times New Roman', serif;
+        font-size: 1.8em;
+        color: #ffffff;
+        font-family: 'Times New Roman', serif;
+        font-size: 1.8em;
+        color: #ffffff;
+        /* Adjust the color as needed */
+    }
+
+    li {
+        font-family: 'Times New Roman', serif;
+        font-size: 1.8em;
+        color: #ffffff;
+        font-family: 'Times New Roman', serif;
+        font-size: 1.8em;
+        color: #ffffff;
+        /* Adjust the color as needed */
+    }
+
+    ul {
+        font-family: 'Times New Roman', serif;
+        font-size: 1.8em;
+        color: #ffffff;
+        /* Adjust the color as needed */
+
+        ul {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.8em;
+            color: #ffffff;
+            /* Adjust the color as needed */
+        }
+
+        /* Add styles for other headings (h4, h5, h6) if needed */
+
+
+      ul {
+
+            /* Add your existing styles here */
+
+            #navbar {
+                display: none;
+                flex-direction: column;
+                /* Display the items vertically */
+
+
+
+                #navbar {
+                    display: none;
+                    flex-direction: column;
+
+                }
+
+
+
+                #menuButton {
+                    display: block;
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 10px;
+                    cursor: pointer;
+                    border: none;
+                    font-size: 24px;
+
+                    flex-direction: column;
+                    /* Adjust the font size as needed */
+                    display: block;
+                    background-color: #000000;
+                    color: #fff;
+                    padding: 10px;
+                    cursor: pointer;
+                    border: none;
+                    font-size: 24px;
+                    flex-direction: column;
+
+                }
+
+                @media only screen and (max-width: 600px) {
+                    header {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    #navbar {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    @media only screen and (max-width: 600px) {
+                        header {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        #navbar ul {
+                            flex-direction: column;
+                        }
+
+                        #navbar {
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        #menuButton {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    #navbar ul {
+                        flex-direction: column;
+                    }
+
+                    #menuButton {
+                        margin-bottom: 10px;
+                    }
+
+                    /* Add your styles here */
+
+                    #navbar {
+                        display: none;
+                        flex-direction: column;
+                        /* Display the items vertically */
+                    }
+
+                    #menuButton {
+                        display: block;
+                        background-color: #000000;
+                        color: #fff;
+                        padding: 10px;
+                        cursor: pointer;
+                        border: none;
+                        font-size: 24px;
+
+                        flex-direction: column;
