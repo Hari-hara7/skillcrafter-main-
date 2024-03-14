@@ -32,3 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
     navbar.style.display = navbar.style.display === "block" ? "none" : "block";
   });
 });
+function toggleMenu() {
+  var menuBtn = document.querySelector(".menu-btn");
+  menuBtn.classList.toggle("active");
+}
+ function toggleMenu() {
+   var navbar = document.getElementById("navbar");
+   if (navbar.style.display === "block") {
+     navbar.style.display = "none";
+   } else {
+     navbar.style.display = "block";
+   }
+ }
+ function toggleMenu() {
+   var navbar = document.getElementById("navbar");
+   if (navbar.style.display === "block") {
+     navbar.style.display = "none";
+   } else {
+     navbar.style.display = "block";
+   }
+ }

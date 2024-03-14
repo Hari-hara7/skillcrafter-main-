@@ -543,101 +543,62 @@ h1 {
         /* Add styles for other headings (h4, h5, h6) if needed */
 
 
-      ul {
 
             /* Add your existing styles here */
 
-            #navbar {
-                display: none;
-                flex-direction: column;
-                /* Display the items vertically */
-
-
-
-                #navbar {
-                    display: none;
-                    flex-direction: column;
-
-                }
-
-
-
-                #menuButton {
-                    display: block;
-                    background-color: #000000;
-                    color: #fff;
-                    padding: 10px;
-                    cursor: pointer;
-                    border: none;
-                    font-size: 24px;
-
-                    flex-direction: column;
-                    /* Adjust the font size as needed */
-                    display: block;
-                    background-color: #000000;
-                    color: #fff;
-                    padding: 10px;
-                    cursor: pointer;
-                    border: none;
-                    font-size: 24px;
-                    flex-direction: column;
-
-                }
-
-                @media only screen and (max-width: 600px) {
-                    header {
-                        flex-direction: column;
-                        align-items: flex-start;
-                    }
-
-                    #navbar {
-                        width: 100%;
-                        text-align: center;
-                    }
-
-                    @media only screen and (max-width: 600px) {
-                        header {
-                            flex-direction: column;
-                            align-items: flex-start;
-                        }
-
-                        #navbar ul {
-                            flex-direction: column;
-                        }
-
-                        #navbar {
-                            width: 100%;
-                            text-align: center;
-                        }
-
-                        #menuButton {
-                            margin-bottom: 10px;
-                        }
-                    }
-
-                    #navbar ul {
-                        flex-direction: column;
-                    }
-
-                    #menuButton {
-                        margin-bottom: 10px;
-                    }
-
-                    /* Add your styles here */
-
-                    #navbar {
-                        display: none;
-                        flex-direction: column;
-                        /* Display the items vertically */
-                    }
-
-                    #menuButton {
-                        display: block;
-                        background-color: #000000;
-                        color: #fff;
-                        padding: 10px;
-                        cursor: pointer;
-                        border: none;
-                        font-size: 24px;
-
-                        flex-direction: column;
+                                                                 /* Normal styles */
+                                                                 header {
+                                                                     position: relative;
+                                                                 }
+                                
+                                                                 .menu-btn {
+                                                                     position: absolute;
+                                                                     top: 10px;
+                                                                     /* Adjust top position as needed */
+                                                                     right: 10px;
+                                                                     /* Adjust right position as needed */
+                                                                     cursor: pointer;
+                                                                 }
+                                
+                                                                 #navbar {
+                                                                     display: none;
+                                                                     position: absolute;
+                                                                     top: 40px;
+                                                                     /* Adjust top position as needed */
+                                                                     right: 10px;
+                                                                     /* Adjust right position as needed */
+                                                                     background-color: #f9f9f9;
+                                                                     padding: 10px;
+                                                                     border-radius: 5px;
+                                                                     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                                                                 }
+                                
+                                                                 #navbar ul {
+                                                                     list-style-type: none;
+                                                                     padding: 0;
+                                                                 }
+                                
+                                                                 #navbar ul li {
+                                                                     display: block;
+                                                                     /* Make list items display vertically */
+                                                                 }
+                                
+                                                                 #navbar ul li a {
+                                                                     text-decoration: none;
+                                                                     color: black;
+                                                                 }
+                                
+                                                                 /* Media query for mobile screens */
+                                                                 @media screen and (max-width: 768px) {
+                                                                     .menu-btn {
+                                                                         display: block;
+                                                                     }
+                                
+                                                                     #navbar {
+                                                                         display: none;
+                                                                     }
+                                
+                                                                     #navbar.active {
+                                                                         display: block;
+                                                                     }
+                                                                 }
