@@ -464,6 +464,17 @@ ul {
     color: #ffffff;
     /* Adjust the color as needed */
 }
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.logo-container img {
+    max-width: 85%; /* Ensure the logo image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 
@@ -602,3 +613,14 @@ h1 {
                                                                          display: block;
                                                                      }
                                                                  }
+                                                                 .logo-container {
+                                                                    max-width: 100%;
+                                                                    overflow: hidden;
+                                                                }
+                                                            
+                                                                .logo-container img {
+                                                                    width: 100%;
+                                                                    height: auto;
+                                                                    display: block;
+                                                                }
+                                                
